@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="525px" height="153px" viewBox="-157 -47.5 525 153" enable-background="new -157 -47.5 525 153" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="15.1294" y1="1643" x2="15.1292" y2="743.8912" gradientTransform="matrix(1 0 0 1 468 -697)">
+	<stop  offset="0" style="stop-color:#041724"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<rect x="123.129" display="none" fill="url(#SVGID_1_)" width="720" height="1001"/>
+<g display="none">
+	<g display="inline">
+		<g>
+			<defs>
+				<rect id="SVGID_2_" x="275.129" y="346" width="158" height="232"/>
+			</defs>
+			<clipPath id="SVGID_3_">
+				<use xlink:href="#SVGID_2_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_3_)">
+				<text transform="matrix(1 0 0 1 283.4941 784.9795)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">20°</text>
+				<text transform="matrix(1 0 0 1 283.4941 888.7236)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">21°</text>
+				<text transform="matrix(1 0 0 1 283.4941 689.0361)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">19°</text>
+				<text transform="matrix(1 0 0 1 283.4941 591.3809)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">18°</text>
+				<text transform="matrix(1 0 0 1 283.4941 496.998)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">17°</text>
+				<text transform="matrix(1 0 0 1 283.4941 403.3945)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">16°</text>
+			</g>
+		</g>
+	</g>
+</g>
+<circle display="none" fill="#31ABFF" stroke="#31ABFF" stroke-width="0.5936" stroke-miterlimit="10" cx="494.93" cy="726.5" r="6.141"/>
+<circle display="none" fill="#31ABFF" fill-opacity="0.45" cx="494.93" cy="726.5" r="10.912"/>
+<path display="none" fill="none" stroke="#00507F" stroke-miterlimit="10" d="M968.129,664.752
+	C828.971,627.465,638.581,610,484.129,610s-344.841,17.465-484,54.752"/>
+<line display="none" fill="none" stroke="#31ABFF" stroke-miterlimit="10" x1="667.129" y1="719.5" x2="363.129" y2="719.5"/>
+<line fill="none" stroke="#FFD38C" stroke-width="3" stroke-miterlimit="10" x1="365.139" y1="83.807" x2="-156" y2="83.807"/>
+<path fill="#FE9C00" d="M94.271,58.989H367v-94.848c-15.771-1.139-119.5-10.116-272.729-10.724L47.76-46.794
+	c-82.26,0-130.26,2.885-204.76,4.96V58.989H48.5H94.271z"/>
+</svg>

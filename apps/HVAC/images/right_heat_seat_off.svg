@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="159px" height="129px" viewBox="0 0 159 129" enable-background="new 0 0 159 129" xml:space="preserve">
+<g display="none">
+	<g display="inline">
+		<g>
+			<g>
+				<g>
+					<g>
+						<defs>
+							<rect id="SVGID_1_" x="410" y="346" width="158" height="232"/>
+						</defs>
+						<clipPath id="SVGID_2_">
+							<use xlink:href="#SVGID_1_"  overflow="visible"/>
+						</clipPath>
+						<g clip-path="url(#SVGID_2_)">
+							<text transform="matrix(1 0 0 1 427.5938 489.4902)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">20°</text>
+							<text transform="matrix(1 0 0 1 427.5938 593.2334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">21°</text>
+							<text transform="matrix(1 0 0 1 427.5938 393.5469)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">19°</text>
+							<text transform="matrix(1 0 0 1 427.5938 295.8906)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">18°</text>
+							<text transform="matrix(1 0 0 1 427.5938 201.5078)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">17°</text>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<rect x="0.522" y="0.733" fill-opacity="0.29" stroke="#B2F0FF" stroke-miterlimit="10" stroke-opacity="0.64" width="157.955" height="127.535"/>
+<path fill="#53B5CE" fill-opacity="0.29" stroke="#B2F0FF" stroke-width="0.8243" stroke-miterlimit="10" stroke-opacity="0.64" d="
+	M95.384,80.979l51.054-3.021c3.598-0.146,5.479,3.104,4.104,7.17l-2.858,10.824c-1.522,4.528-5.98,9.041-9.908,9.041H75.187
+	c-5.254,0-6.745-6.563-6.745-11.152c0.12-25.828-4.733-52.385-14.563-78.247c-0.953-2.52,0.953-5.045,4.299-5.7
+	c1.817-0.356,3.634-0.713,5.448-1.069c3.337-0.654,7.051,0.768,8.26,3.236c11.037,22.562,18.271,43.78,21.695,66.558
+	C93.58,78.613,94.244,81.047,95.384,80.979z"/>
+<path fill="#B2F0FF" d="M128.551,123.025c18.86,0-15.645,0,3.215,0c-10.184-23,10.188-45,0-67c-18.854,0,15.646,0-3.215,0
+	C138.734,78.025,118.367,100.025,128.551,123.025z"/>
+<polygon fill="#B2F0FF" points="136.54,56.313 129.039,48.476 126.003,58.891 "/>
+<path fill="#B2F0FF" d="M115.691,123.025c18.857,0-15.646,0,3.217,0c-10.186-23,10.186-45,0-67c-18.86,0,15.646,0-3.217,0
+	C125.876,78.025,105.508,100.025,115.691,123.025z"/>
+<polygon fill="#B2F0FF" points="123.682,56.313 116.18,48.476 113.145,58.891 "/>
+<path fill="#B2F0FF" d="M102.189,123.025c18.858,0-15.646,0,3.215,0c-10.184-23,10.187-45,0-67c-18.857,0,15.646,0-3.215,0
+	C112.374,78.025,92.006,100.025,102.189,123.025z"/>
+<polygon fill="#B2F0FF" points="110.18,56.313 102.678,48.476 99.643,58.891 "/>
+<path opacity="0.29" stroke="#FE9C00" stroke-miterlimit="10" enable-background="new    " d="M54.895,44.025
+	c-1.785-8-3.949-15-6.518-22H7.938v22H54.895z"/>
+<path opacity="0.29" stroke="#FE9C00" stroke-miterlimit="10" enable-background="new    " d="M59.537,69.025
+	c-0.85-7-2.1-14-3.729-21H7.938v21H59.537z"/>
+<path opacity="0.29" stroke="#FE9C00" stroke-miterlimit="10" enable-background="new    " d="M60.92,93.783
+	c0.029-6.887-0.303-13.758-0.973-20.758H7.935v22h53.017C60.936,95.025,60.918,94.18,60.92,93.783z"/>
+</svg>

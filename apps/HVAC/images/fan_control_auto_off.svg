@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="111px" height="88px" viewBox="0 0 111 88" enable-background="new 0 0 111 88" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-107.9995" y1="1649" x2="-107.9997" y2="749.8912" gradientTransform="matrix(1 0 0 1 468 -703)">
+	<stop  offset="0" style="stop-color:#041724"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<rect display="none" fill="url(#SVGID_1_)" width="720" height="1001"/>
+<rect x="305.25" y="763.898" display="none" fill="#31ABFF" fill-opacity="0.29" stroke="#31ABFF" stroke-width="0.8472" stroke-miterlimit="10" stroke-opacity="0.64" width="110.5" height="86.563"/>
+<g display="none">
+	<g display="inline">
+		<g>
+			<defs>
+				<rect id="SVGID_2_" x="152" y="346" width="158" height="232"/>
+			</defs>
+			<clipPath id="SVGID_3_">
+				<use xlink:href="#SVGID_2_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_3_)">
+				<text transform="matrix(1 0 0 1 160.3643 784.9795)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">20°</text>
+				<text transform="matrix(1 0 0 1 160.3643 888.7236)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">21°</text>
+				<text transform="matrix(1 0 0 1 160.3643 689.0361)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">19°</text>
+				<text transform="matrix(1 0 0 1 160.3643 591.3809)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">18°</text>
+				<text transform="matrix(1 0 0 1 160.3643 496.998)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">17°</text>
+				<text transform="matrix(1 0 0 1 160.3643 403.3945)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">16°</text>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	
+		<rect x="0.25" y="0.719" fill-opacity="0.29" stroke="#B2F0FF" stroke-width="0.8472" stroke-miterlimit="10" stroke-opacity="0.64" width="110.5" height="86.563"/>
+	<path fill="#B2F0FF" d="M25.526,47.684l-1.711,5.637h-3.748l6.375-19.89h4.633l6.463,19.89h-3.896l-1.8-5.637H25.526z
+		 M31.222,44.939l-1.563-4.898c-0.383-1.21-0.708-2.565-1.003-3.719h-0.061c-0.295,1.151-0.59,2.538-0.942,3.719l-1.535,4.898
+		H31.222z"/>
+	<path fill="#B2F0FF" d="M42.971,33.431v11.598c0,3.896,1.623,5.695,4.073,5.695c2.626,0,4.19-1.803,4.19-5.695V33.431h3.63V44.79
+		c0,6.14-3.158,8.854-7.938,8.854c-4.604,0-7.584-2.567-7.584-8.823V33.431H42.971z"/>
+	<path fill="#B2F0FF" d="M62.835,36.47h-5.666v-3.039H72.19v3.039h-5.727V53.32h-3.63L62.835,36.47L62.835,36.47z"/>
+	<path fill="#B2F0FF" d="M91.346,43.169c0,6.669-4.043,10.478-9.53,10.478c-5.606,0-9.147-4.278-9.147-10.122
+		c0-6.108,3.836-10.417,9.443-10.417C87.922,33.105,91.346,37.503,91.346,43.169z M76.502,43.464c0,4.044,2.036,7.262,5.518,7.262
+		c3.515,0,5.49-3.246,5.49-7.407c0-3.748-1.857-7.289-5.49-7.289C78.42,36.027,76.502,39.362,76.502,43.464z"/>
+</g>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-107.5005" y1="1468.6846" x2="-107.5005" y2="1552.0071" gradientTransform="matrix(1 0 0 1 468 -703)">
+	<stop  offset="0.5092" style="stop-color:#31ABFF;stop-opacity:0"/>
+	<stop  offset="0.9018" style="stop-color:#31ABFF"/>
+	<stop  offset="1" style="stop-color:#63E6FF"/>
+</linearGradient>
+<rect x="305.5" y="763.5" display="none" fill="url(#SVGID_4_)" stroke="#31ABFF" stroke-miterlimit="10" width="110" height="87"/>
+<path display="none" fill="#FFFFFF" d="M330.526,810.863l-1.711,5.637h-3.748l6.375-19.89h4.633l6.463,19.89h-3.896l-1.8-5.637
+	H330.526z M336.222,808.119l-1.563-4.898c-0.383-1.21-0.708-2.565-1.003-3.719h-0.061c-0.295,1.151-0.59,2.538-0.942,3.719
+	l-1.535,4.898H336.222z"/>
+<path display="none" fill="#FFFFFF" d="M347.971,796.61v11.598c0,3.896,1.623,5.695,4.073,5.695c2.626,0,4.19-1.803,4.19-5.695
+	V796.61h3.63v11.359c0,6.14-3.158,8.854-7.938,8.854c-4.604,0-7.584-2.567-7.584-8.823V796.61H347.971z"/>
+<path display="none" fill="#FFFFFF" d="M367.835,799.649h-5.666v-3.039h15.021v3.039h-5.727V816.5h-3.63L367.835,799.649
+	L367.835,799.649z"/>
+<path display="none" fill="#FFFFFF" d="M396.346,806.349c0,6.669-4.043,10.478-9.53,10.478c-5.606,0-9.147-4.278-9.147-10.122
+	c0-6.108,3.836-10.417,9.443-10.417C392.922,796.285,396.346,800.683,396.346,806.349z M381.502,806.644
+	c0,4.044,2.036,7.262,5.518,7.262c3.515,0,5.49-3.246,5.49-7.407c0-3.748-1.857-7.289-5.49-7.289
+	C383.42,799.207,381.502,802.542,381.502,806.644z"/>
+<text transform="matrix(1 0 0 1 324.4473 816.5)" display="none" fill="#31ABFF" enable-background="new    " font-family="'MyriadPro-Semibold'" font-size="29.5171">AUTO</text>
+</svg>

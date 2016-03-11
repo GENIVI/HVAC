@@ -1,0 +1,16 @@
+#/* Copyright (C) 2015, Jaguar Land Rover. All Rights Reserved.
+# *
+# * This Source Code Form is subject to the terms of the Mozilla Public
+# * License, v. 2.0. If a copy of the MPL was not distributed with this
+# * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+AwesomeIcon 1.0 AwesomeIcon.qml
+Box 1.0 Box.qml
+BoxButton 1.0 BoxButton.qml
+BoxHeading 1.0 BoxHeading.qml
+DateTime 1.0 DateTime.qml
+HexGrid 1.0 HexGrid.qml
+HexSwitch 1.0 HexSwitch.qml
+Label 1.0 Label.qml
+NumberPad 1.0 NumberPad.qml
+Button 1.0 Button.qml

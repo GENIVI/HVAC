@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="158px" height="231px" viewBox="0 0 158 231" enable-background="new 0 0 158 231" xml:space="preserve">
+<polygon fill-opacity="0.8" points="158,89.703 158,0 0.436,0 0.436,231.668 158,231.668 158,141.186 132.26,115.444 "/>
+<g display="none">
+	<g display="inline">
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="152" y="346" width="158" height="232"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_2_)">
+				<text transform="matrix(1 0 0 1 160.3643 784.9795)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">20°</text>
+				<text transform="matrix(1 0 0 1 160.3643 888.7236)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">21°</text>
+				<text transform="matrix(1 0 0 1 160.3643 689.0361)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">19°</text>
+				<text transform="matrix(1 0 0 1 160.3643 591.3809)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">18°</text>
+				<text transform="matrix(1 0 0 1 160.3643 496.998)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">17°</text>
+				<text transform="matrix(1 0 0 1 160.3643 403.3945)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="93.6032">16°</text>
+			</g>
+		</g>
+	</g>
+</g>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-237.0005" y1="909.6602" x2="-237.0005" y2="1134.0173" gradientTransform="matrix(1 0 0 1 468 -560)">
+	<stop  offset="0" style="stop-color:#2175AD"/>
+	<stop  offset="0.2822" style="stop-color:#2175AD;stop-opacity:0"/>
+	<stop  offset="0.7055" style="stop-color:#2175AD;stop-opacity:0"/>
+	<stop  offset="1" style="stop-color:#2175AD"/>
+</linearGradient>
+<polygon display="none" fill="url(#SVGID_3_)" stroke="#31ABFF" stroke-miterlimit="10" points="309.5,435.516 309.5,345.5 
+	152.5,345.5 152.5,577.5 309.5,577.5 309.5,486.998 283.759,461.257 "/>
+</svg>

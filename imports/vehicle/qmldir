@@ -1,0 +1,11 @@
+#/* Copyright (C) 2015, Jaguar Land Rover. All Rights Reserved.
+# *
+# * This Source Code Form is subject to the terms of the Mozilla Public
+# * License, v. 2.0. If a copy of the MPL was not distributed with this
+# * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+singleton FuelModel 1.0 FuelModel.qml
+singleton SpeedModel 1.0 SpeedModel.qml
+singleton TemperatureModel 1.0 TemperatureModel.qml
+singleton PositionModel 1.0 PositionModel.qml
+singleton ClimateModel 1.0 ClimateModel.qml
