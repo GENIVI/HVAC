@@ -10,16 +10,14 @@ import system 1.0
 Item {
     height: 120
 
-    ShaderEffect {
-        anchors.fill: parent
-        property color color: "#777"
-        property real radius: 40
-        opacity: 0.24
+//    ShaderEffect {
+//        anchors.fill: parent
+//        property color color: "#777"
+//        property real radius: 40
+//        opacity: 0.24
 
-        fragmentShader: "
 
-        "
-    }
+//    }
 
 //    Image {
 //        anchors.left: parent.left
@@ -36,30 +34,30 @@ Item {
 //        id: devinfo
 //    }
 
-    Image {
-        anchors.centerIn: parent
-        anchors.horizontalCenterOffset: -15
-        source: "images/AGL-Logo.png"
-        height: 80
-        fillMode: Image.PreserveAspectFit
+//    Image {
+//        anchors.centerIn: parent
+//        anchors.horizontalCenterOffset: -15
+////        source: "images/AGL-Logo.png"
+////        height: 80
+////        fillMode: Image.PreserveAspectFit
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: ipaddr.visible = !ipaddr.visible
-        }
+//        MouseArea {
+//            anchors.fill: parent
+//            onClicked: ipaddr.visible = !ipaddr.visible
+//        }
 
-        Rectangle {
-            id: ipaddr
-            color: "#FFFFFF"
-            visible: false
-            anchors.fill: parent
+//        Rectangle {
+//            id: ipaddr
+//            color: "#FFFFFF"
+//            visible: false
+//            anchors.fill: parent
 
 //            Text {
 //                text: "IP: " + (devinfo.ipAddresses.length ? devinfo.ipAddresses.join("\n") : " ")
 //                anchors.fill: parent
 //            }
-        }
-    }
+//        }
+//    }
 
 
 }

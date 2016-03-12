@@ -21,39 +21,11 @@ Item {
 
     Item {
         id: appSurface
+        anchors.fill: parent
 
-        anchors.top: topbar.bottom
-        anchors.bottom: bottombar.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-
-        //        AppGrid {
-        //            anchors.centerIn: parent
-        //            visible: System.activeApp === "hvac"
-        //        }
-
-
-        //        Home {}
         HVAC {
             anchors.centerIn: parent
             visible: System.activeApp === "hvac"
         }
-
     }
-
-    TopBar {
-        id: topbar
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-    }
-
-    BottomBar {
-        id: bottombar
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-    }
-
-
 }

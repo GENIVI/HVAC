@@ -28,6 +28,6 @@ Item {
         }
 
         SeatHeatButton { side: root.side }
-        TemperatureWheel { side: root.side }
+        TemperatureWheel {id:twheel; side: root.side }
     }
 }
