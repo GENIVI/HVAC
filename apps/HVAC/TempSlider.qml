@@ -25,6 +25,9 @@ Item {
         anchors.fill: parent
         color: "#4a53b5ce"
     }
+    onValueChanged: {
+        console.log("leftTemp = ", HVACModel[propertyName])
+    }
 
     Rectangle {
         width: parent.width
@@ -40,13 +43,13 @@ Item {
         anchors.bottom: parent.bottom
         color: Style.orangeLt
 
-//        Image {
-//            width: 30
-//            height: width
-//            anchors.verticalCenter: parent.top
-//            anchors.horizontalCenter: parent.horizontalCenter
-//            source: "images/drag_knob.svg"
-//        }
+        Image {
+            width: 30
+            height: width
+            anchors.verticalCenter: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            source: "images/drag_knob.svg"
+        }
     }
 
     MouseArea {
