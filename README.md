@@ -42,7 +42,7 @@ This means that `leftTemperature` property has changed to value 22.
 ## **List of properties**
 
 | **Property name** | **Range of valid values** |
-|--------------|-----------------------|
+|--------|--------|
 | leftTemperature | (15 - 30) |
 | rightTemperature | (15 - 30) |
 | leftSeatHeat | (0 - 3) |
