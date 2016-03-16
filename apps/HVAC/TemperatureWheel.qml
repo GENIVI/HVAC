@@ -17,62 +17,63 @@ Rectangle {
     property string propertyName: side + "Temperature"
     property real value: HVACModel[propertyName]
 
-//    ListView {
-//        id: myListView
-//        anchors.fill: parent
-//        clip: true
-////        snapMode: ListView.SnapToItem
-//        model: TemperatureModel
-//        header: Item { height: 120 }
-//        footer: Item { height: 120 }
-//        currentIndex: Math.min(Math.floor(value*count), count - 1)
-//        onCurrentIndexChanged: {
-//            console.log("currentIndex=", myListView.currentIndex)
-//        }
+    //    ListView {
+    //        id: myListView
+    //        anchors.fill: parent
+    //        clip: true
+    ////        snapMode: ListView.SnapToItem
+    //        model: TemperatureModel
+    //        header: Item { height: 120 }
+    //        footer: Item { height: 120 }
+    //        currentIndex: Math.min(Math.floor(value*count), count - 1)
+    //        onCurrentIndexChanged: {
+    //            console.log("currentIndex=", myListView.currentIndex)
+    //        }
 
-//        flickDeceleration: 5000
-//        onContentYChanged: {
-//            if (dragging || flicking) {
-//                var item = Math.round((contentY + 120) / 110)
-////                console.log("count=",count, "  item=",item, "  value=",value)
-//                item = Math.max(Math.min(item, count - 1), 0)
-//                if (item != currentIndex) {
-//                    var temperature = item / (count - 1)
-//                    HVACModel[propertyName] = temperature
-//                }
-//            }
-//        }
+    //        flickDeceleration: 5000
+    //        onContentYChanged: {
+    //            if (dragging || flicking) {
+    //                var item = Math.round((contentY + 120) / 110)
+    ////                console.log("count=",count, "  item=",item, "  value=",value)
+    //                item = Math.max(Math.min(item, count - 1), 0)
+    //                if (item != currentIndex) {
+    //                    var temperature = item / (count - 1)
+    //                    HVACModel[propertyName] = temperature
+    //                }
+    //            }
+    //        }
 
-//        highlightMoveDuration: 100
-//        interactive: true
+    //        highlightMoveDuration: 100
+    //        interactive: true
 
-//        delegate: Text {
-//            x: side === "right" ? 40 : 10
-//            height: 110
-//            verticalAlignment: Text.AlignVCenter
-//            color: "white"
-//            font.pixelSize: 70
-//            text: model.text
-//        }
-//    }
+    //        delegate: Text {
+    //            x: side === "right" ? 40 : 10
+    //            height: 110
+    //            verticalAlignment: Text.AlignVCenter
+    //            color: "white"
+    //            font.pixelSize: 70
+    //            text: model.text
+    //        }
+    //    }
 
     Text {
-                x: side === "right" ? 40 : 10
-                y: 150
-                height: 110
-                verticalAlignment: Text.AlignVCenter
-                color: "white"
-                font.pixelSize: 70
-                property var myTemp : Math.round(15 + value*15)
-                text: myTemp+" \u00b0C"
-            }
+        font.family: sourceSans.name
+        x: side === "right" ? 40 : 10
+        y: 150
+        height: 110
+        verticalAlignment: Text.AlignVCenter
+        color: "white"
+        font.pixelSize: 70
+        property var myTemp : Math.round(15 + value*15)
+        text: myTemp+" \u00b0C"
+    }
 
 
 
 
-//    Image {
-//        mirror: side === "left"
-//        source: "./images/right_number_cover.svg"
-//        anchors.fill: parent
-//    }
+    //    Image {
+    //        mirror: side === "left"
+    //        source: "./images/right_number_cover.svg"
+    //        anchors.fill: parent
+    //    }
 }

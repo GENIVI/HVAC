@@ -37,9 +37,7 @@ signals:
 public slots:
     Q_SCRIPTABLE void QML_value(QString zone, double newValue);
     Q_SCRIPTABLE void set_value(QString zone, double newValue);
-    Q_SCRIPTABLE void QML_mode(QString zone, bool newMode);
-    Q_SCRIPTABLE void set_mode(QString zone, bool newMode);
-    Q_SCRIPTABLE int get_value(QString zone);
+    Q_SCRIPTABLE double get_value(QString zone);
     Q_SCRIPTABLE void debug_print(QString myString);
 
 
@@ -49,7 +47,6 @@ private:
     float leftTemperature;
     float rightTemperature;
     float fanSpeed;
-    bool hazards;
     bool fanDown;
     bool fanRight;
     bool fanUp;
@@ -60,6 +57,13 @@ private:
     bool defrostRear;
     bool defrostFront;
 
+
+    double maxTemp;
+    double minTemp;
+    double minFan;
+    double maxFan;
+    double maxSeatHeat;
+    double minSeatHeat;
 
 };
 

@@ -134,5 +134,7 @@
         <file>images/white_return.png</file>
         <file>Scaled.qml</file>
         <file>Main.qml</file>
+        <file>apps/HVAC/images/drag_knob.png</file>
+        <file>apps/SourceSansPro-Regular.ttf</file>
     </qresource>
 </RCC>

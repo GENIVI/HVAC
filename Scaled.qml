@@ -7,6 +7,7 @@
 import QtQuick 2.0
 
 Item {
+    FontLoader { id: sourceSans ; source: "apps/SourceSansPro-Regular.ttf" }
     width: 1080*scale
     height: 1920*scale
     scale: 0.5

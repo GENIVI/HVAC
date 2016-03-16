@@ -54,31 +54,31 @@ Item {
         myDbus.QML_value("rightSeatHeat", rightSeatHeat)
     }
     onFanACChanged: {
-        myDbus.QML_mode("fanAC", fanAC)
+        myDbus.QML_value("fanAC", fanAC)
     }
     onFanRightChanged: {
-        myDbus.QML_mode("fanRight", fanRight)
+        myDbus.QML_value("fanRight", fanRight)
     }
     onFanDownChanged: {
-        myDbus.QML_mode("fanDown", fanDown)
+        myDbus.QML_value("fanDown", fanDown)
     }
     onFanUpChanged: {
-        myDbus.QML_mode("fanUp", fanUp)
+        myDbus.QML_value("fanUp", fanUp)
     }
     onFanAutoChanged: {
-        myDbus.QML_mode("fanAuto", fanAuto)
+        myDbus.QML_value("fanAuto", fanAuto)
     }
     onFanRecircChanged: {
-        myDbus.QML_mode("fanRecirc", fanRecirc)
+        myDbus.QML_value("fanRecirc", fanRecirc)
     }
     onDefrostMaxChanged: {
-        myDbus.QML_mode("defrostMax", defrostMax)
+        myDbus.QML_value("defrostMax", defrostMax)
     }
     onDefrostRearChanged: {
-        myDbus.QML_mode("defrostFront", defrostFront)
+        myDbus.QML_value("defrostFront", defrostFront)
     }
     onDefrostFrontChanged: {
-        myDbus.QML_mode("defrostRear", defrostRear)
+        myDbus.QML_value("defrostRear", defrostRear)
     }
 
 
@@ -93,7 +93,7 @@ Item {
             parent.rightTemperature=(myDbus.get_value("rightTemperature")-15.0)/15.0
         }
         onFanSpeed_changed: {
-            parent.fanSpeed=myDbus.get_value("fanSpeed")/100.0
+            parent.fanSpeed=(myDbus.get_value("fanSpeed")/100.0)
         }
         onFanAC_changed: {
             parent.fanAC=myDbus.get_value("fanAC")

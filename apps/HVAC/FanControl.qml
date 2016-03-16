@@ -11,7 +11,8 @@ Item {
     width: childrenRect.width
     height: childrenRect.height
 
-    property real value: 0
+    property string propertyName: "fanSpeed"
+    property real value: HVACModel[propertyName]
 
     Image {
         y: 15

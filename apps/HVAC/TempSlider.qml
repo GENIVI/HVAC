@@ -48,7 +48,7 @@ Item {
             height: width
             anchors.verticalCenter: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
-            source: "images/drag_knob.svg"
+            source: "images/drag_knob.png"
         }
     }
 

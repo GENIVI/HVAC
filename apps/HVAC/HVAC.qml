@@ -15,62 +15,6 @@ import Dbushelper 1.0
 App {
     appId: "hvac"
 
-//    Dbushelper{
-//        id: myDbus
-//        onTemp_leftSlider_changed: {
-//            HVACModel['leftTemperature']=myDbus.get_value("leftSlider")/100.0
-//        }
-//        onTemp_rightSlider_changed: {
-//            HVACModel['rightTemperature']=myDbus.get_value("rightSlider")/100.0
-//        }
-//        onFanSpeed_changed: {
-//            HVACModel['fanSpeed']=myDbus.get_value("fanSpeed")/100.0
-//        }
-//        onAc_changed: {
-//            HVACModel['fanAC']=myDbus.get_value("AC")
-//        }
-//        onTemp_leftSeat_changed: {
-//            HVACModel['leftSeatHeat']=myDbus.get_value("leftSeat")
-//        }
-//        onTemp_rigthSeat_changed: {
-//            HVACModel['rightSeatHeat']=myDbus.get_value("rightSeat")
-//        }
-//        onFanFace_changed: {
-//            HVACModel['fanRight']=myDbus.get_value("fanFace")
-//        }
-//        onFanFeet_changed: {
-//            HVACModel['fanDown']=myDbus.get_value("fanFeet")
-//        }
-//        onFanWindscreen_changed: {
-//            HVACModel['fanUp']=myDbus.get_value("fanWindscreen")
-//        }
-//        onAutoMode_changed: {
-//            HVACModel['fanAuto']=myDbus.get_value("autoMode")
-//        }
-//        onRecycleMode_changed: {
-//            HVACModel['fanRecirc']=myDbus.get_value("recycleMode")
-//        }
-//        onHeatMax_changed: {
-//            HVACModel['defrostMax']=myDbus.get_value("heatMax")
-//        }
-//        onHeatRear_changed: {
-//            HVACModel['defrostFront']=myDbus.get_value("heatRear")
-//        }
-//        onHeatFront_changed: {
-//            HVACModel['defrostRear']=myDbus.get_value("heatFront")
-//        }
-
-//    }
-
-//    Text{
-//        id:t_debug
-//        text: "default"
-//        anchors.horizontalCenter: parent.horizontalCenter
-//        anchors.verticalCenter: parent.verticalCenter
-//        color: "white"
-//        font.pointSize: 32
-//    }
-
     HazardButton {
         id: hazardButton
         y: 100

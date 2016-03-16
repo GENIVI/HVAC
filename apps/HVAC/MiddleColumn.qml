@@ -24,6 +24,7 @@ Item {
             boxWidth: 45
             boxHeight: 19
             fontSize: 27
+
             text: (side === "left" ? "L" : "R" ) + " CLIMATE"
         }
 
