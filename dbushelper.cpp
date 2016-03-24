@@ -2,6 +2,7 @@
 #include <QtDBus/QtDBus>
 #include <QDebug>
 #include <QtGlobal>
+#include <string.h>
 
 dbushelper::dbushelper()
 {
@@ -241,9 +242,16 @@ void dbushelper::broadcast_temp(QString zone, double newTemp){
     QDBusConnection conn = QDBusConnection::sessionBus();
     QDBusMessage signal = QDBusMessage::createSignal(m_path, m_interface, m_member);
 
+    QString msg;
+    int m_value = (int) round(newTemp);
+
+    std::string s = std::to_string(m_value);
+    msg = "{\"function\":" + zone + ", \"value\":" + s.c_str() +"}";
     QList<QVariant> list;
-    list.append(zone);
-    list.append(newTemp);
+
+    list.append(msg);
+
+
 
     if (!list.isEmpty()) {
         signal.setArguments(list);
@@ -254,8 +262,7 @@ void dbushelper::broadcast_temp(QString zone, double newTemp){
         exit(1);
     }
     else {
-        qDebug() << "*sent signal*:" << m_member;
-        qDebug() << "with arguments: " << zone << " " << newTemp;
+        qDebug() << "*sent signal*:" << msg;
     }
 
 }
