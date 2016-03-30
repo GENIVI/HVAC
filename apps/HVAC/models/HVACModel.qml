@@ -19,8 +19,6 @@ Item {
     property bool fanAuto: false
     property bool fanRecirc: false
 
-    property real fanSpeed: 0
-
     property bool defrostMax: false
     property bool defrostFront: false
     property bool defrostRear: false
@@ -28,21 +26,23 @@ Item {
     property double leftTemperature: 0
     property double rightTemperature: 0
 
-    property int leftSeatHeat: 0
-    property int rightSeatHeat: 0
+    property double fanSpeed: 0
 
-    onFanSpeedChanged: {
-//        var currentFan = ClimateModel.getRangeValue(fanSpeed,ClimateModel.fanStepSize);
-        myDbus.QML_value("fanSpeed", fanSpeed*100)
-    }
+    property double leftSeatHeat: 0
+    property double rightSeatHeat: 0
+
+
 
     onLeftTemperatureChanged: {
-//        var temperature = ClimateModel.getRangeValue(leftTemperature,ClimateModel.temperatureStepSize);
         myDbus.QML_value("leftTemperature", leftTemperature*15+15)
     }
 
+
+    onFanSpeedChanged: {
+        myDbus.QML_value("fanSpeed", fanSpeed*100)
+    }
+
     onRightTemperatureChanged: {
-//        var temperature = ClimateModel.getRangeValue(rightTemperature,ClimateModel.temperatureStepSize);
         myDbus.QML_value("rightTemperature", rightTemperature*15+15)
     }
 
@@ -75,10 +75,10 @@ Item {
         myDbus.QML_value("defrostMax", defrostMax)
     }
     onDefrostRearChanged: {
-        myDbus.QML_value("defrostFront", defrostFront)
+        myDbus.QML_value("defrostRear", defrostRear)
     }
     onDefrostFrontChanged: {
-        myDbus.QML_value("defrostRear", defrostRear)
+        myDbus.QML_value("defrostFront", defrostFront)
     }
 
 
@@ -92,16 +92,18 @@ Item {
         onRightTemperature_changed: {
             parent.rightTemperature=(myDbus.get_value("rightTemperature")-15.0)/15.0
         }
+
         onFanSpeed_changed: {
             parent.fanSpeed=(myDbus.get_value("fanSpeed")/100.0)
         }
+
         onFanAC_changed: {
             parent.fanAC=myDbus.get_value("fanAC")
         }
         onLeftSeatHeat_changed: {
             parent.leftSeatHeat=myDbus.get_value("leftSeatHeat")
         }
-        onRigthSeatHeat_changed: {
+        onRightSeatHeat_changed: {
             parent.rightSeatHeat=myDbus.get_value("rightSeatHeat")
         }
         onFanRight_changed: {
@@ -123,10 +125,10 @@ Item {
             parent.defrostMax=myDbus.get_value("defrostMax")
         }
         onDefrostRear_changed: {
-            parent.defrostFront=myDbus.get_value("defrostFront")
+            parent.defrostRear=myDbus.get_value("defrostRear")
         }
         onDefrostFront_changed: {
-            parent.defrostRear=myDbus.get_value("defrostRear")
+            parent.defrostFront=myDbus.get_value("defrostFront")
         }
 
     }

@@ -6,6 +6,8 @@
 #define SERVICE_NAME    "com.jaguarlandrover.HVAC"
 #endif // SERVICE_NAME
 
+using namespace std;
+
 class dbushelper  : public QQuickItem
 {
     Q_OBJECT
@@ -14,11 +16,11 @@ class dbushelper  : public QQuickItem
 
 public:
     dbushelper();
-    void broadcast_temp(QString zone, double newTemp);
+    void broadcast_value(QString zone, double newVal);
 
 signals:
     void leftSeatHeat_changed();
-    void rigthSeatHeat_changed();
+    void rightSeatHeat_changed();
     void leftTemperature_changed();
     void rightTemperature_changed();
     void fanSpeed_changed();
@@ -32,18 +34,17 @@ signals:
     void defrostRear_changed();
     void defrostFront_changed();
 
-
-
 public slots:
     Q_SCRIPTABLE void QML_value(QString zone, double newValue);
     Q_SCRIPTABLE void set_value(QString zone, double newValue);
     Q_SCRIPTABLE double get_value(QString zone);
     Q_SCRIPTABLE void debug_print(QString myString);
+    Q_SCRIPTABLE QString return_status();
 
 
 private:
     float leftSeatHeat;
-    float rigthSeatHeat;
+    float rightSeatHeat;
     float leftTemperature;
     float rightTemperature;
     float fanSpeed;
@@ -57,14 +58,12 @@ private:
     bool defrostRear;
     bool defrostFront;
 
-
     double maxTemp;
     double minTemp;
     double minFan;
     double maxFan;
     double maxSeatHeat;
     double minSeatHeat;
-
 };
 
 #endif // DBUSHELPER_H
