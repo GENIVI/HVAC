@@ -235,9 +235,9 @@ void dbushelper::debug_print(QString myString){
 }
 
 void dbushelper::broadcast_temp(QString zone, double newTemp){
-    QString m_path = "/";
-    QString m_interface = "qml.sink";
-    QString m_member = "QmlSignal";
+    QString m_path = "/com/jlr/qmlsink";
+    QString m_interface = "com.jlr.hvac";
+    QString m_member = "hvac";
 
     QDBusConnection conn = QDBusConnection::sessionBus();
     QDBusMessage signal = QDBusMessage::createSignal(m_path, m_interface, m_member);

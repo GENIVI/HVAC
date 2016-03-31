@@ -3,7 +3,7 @@
 #include <QQuickItem>
 
 #ifndef SERVICE_NAME
-#define SERVICE_NAME    "com.jaguarlandrover.HVAC"
+#define SERVICE_NAME    "com.jaguarlandrover.hvac"
 #endif // SERVICE_NAME
 
 class dbushelper  : public QQuickItem
