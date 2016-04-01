@@ -6,8 +6,6 @@
 
 import QtQuick 2.0
 import "models"
-//import com.jlr.dbus 1.0
-import Dbushelper 1.0
 
 Rectangle {
     width: 239
@@ -37,24 +35,11 @@ Rectangle {
         onClicked: {
             var value = HVACModel[propertyName]
             HVACModel[propertyName] = value > 0 ? value - 1 : 3
-//            myDBus.set_temp(value)
-//            myDBus.debug_print(propertyName)
-//            DBus.emitSignal(side + " seat =" + value)
         }
 
     }
 
     onSeatHeatChanged: img_fill.y=150-seatHeat*40
 
-//    Dbushelper {
-//        id:myDBus
-//        onTemp_changed: {
-
-//            t_debug.text= myDBus.get_temp()
-//            seatHeat=myDBus.get_temp()
-
-//        }
-
-//    }
 
 }

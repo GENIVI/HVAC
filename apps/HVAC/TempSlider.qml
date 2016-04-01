@@ -17,6 +17,7 @@ Item {
     property string propertyName: side + "Temperature"
     property string side: "left"
 
+
     function setProperty(v) {
         HVACModel[propertyName] = Math.min(Math.max(v, 0), 1)
     }
@@ -25,11 +26,10 @@ Item {
         anchors.fill: parent
         color: "#4a53b5ce"
     }
-    onValueChanged: {
-        console.log("leftTemp = ", HVACModel[propertyName])
-    }
+
 
     Rectangle {
+        id: sliders
         width: parent.width
         height: value * parent.height
         color: Style.orangeViv
@@ -59,6 +59,14 @@ Item {
 
         onPressed: setProperty(1 - mouse.y / height)
         onPositionChanged: setProperty(1 - mouse.y / height)
+
+//        onPositionChanged: {
+//            root.value = (1 - mouse.y / height)
+//            HVACModel[propertyName] = root.value;
+//        }
+    }
+    onValueChanged: {
+        sliders.height = value* height
     }
 }
 

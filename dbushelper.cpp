@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QtGlobal>
 #include <string.h>
+#include <sstream>
 
 dbushelper::dbushelper()
 {
@@ -13,7 +14,7 @@ dbushelper::dbushelper()
     QDBusConnection::sessionBus().registerObject("/", this, QDBusConnection::ExportAllSlots);
 
     leftSeatHeat=0;
-    rigthSeatHeat=0;
+    rightSeatHeat=0;
     leftTemperature=0;
     rightTemperature=0;
     fanSpeed=0;
@@ -26,6 +27,7 @@ dbushelper::dbushelper()
     defrostMax=false;
     defrostRear=false;
     defrostFront=false;
+
 
     maxTemp=30;
     minTemp=15;
@@ -42,77 +44,78 @@ void dbushelper::set_value(QString zone, double newValue){
     if (zone=="leftSeatHeat"){
         newValue = round(qBound (minSeatHeat, newValue, maxSeatHeat));
         leftSeatHeat = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
         emit leftSeatHeat_changed();
     }
     else if (zone=="rightSeatHeat"){
+        qDebug()<< "newVal before="<<newValue << "   ,zone="<<"zone";
         newValue = round(qBound (minSeatHeat, newValue, maxSeatHeat));
-        rigthSeatHeat = newValue;
-        broadcast_temp(zone, newValue);
-        emit rigthSeatHeat_changed();
+        rightSeatHeat = newValue;
+        broadcast_value(zone, newValue);
+        emit rightSeatHeat_changed();
     }
     if (zone=="leftTemperature"){
         newValue = qBound (minTemp, newValue, maxTemp);
         leftTemperature = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
         emit leftTemperature_changed();
     }
     if (zone=="rightTemperature"){
         newValue = qBound (minTemp, newValue, maxTemp);
         rightTemperature = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
         emit rightTemperature_changed();
     }
     if (zone=="fanSpeed"){
         newValue = qBound (minFan, newValue, maxFan);
         fanSpeed = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
         emit fanSpeed_changed();
     }
 
     if (zone=="fanDown"){
         fanDown = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanDown_changed();
     }
     if (zone=="fanRight"){
         fanRight = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanRight_changed();
     }
     if (zone=="fanUp"){
         fanUp = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanUp_changed();
     }
     if (zone=="fanAC"){
         fanAC = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanAC_changed();
     }
     if (zone=="fanAuto"){
         fanAuto = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanAuto_changed();
     }
     if (zone=="fanRecirc"){
         fanRecirc = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit fanRecirc_changed();
     }
     if (zone=="defrostMax"){
         defrostMax = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit defrostMax_changed();
     }
     if (zone=="defrostRear"){
         defrostRear = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit defrostRear_changed();
     }
     if (zone=="defrostFront"){
         defrostFront = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
         emit defrostFront_changed();
     }
 }
@@ -124,63 +127,63 @@ void dbushelper::QML_value(QString zone, double newValue){
     if (zone=="leftSeatHeat"){
         newValue = round(qBound (minSeatHeat, newValue, maxSeatHeat));
         leftSeatHeat = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
     }
     else if (zone=="rightSeatHeat"){
         newValue = round(qBound (minSeatHeat, newValue, maxSeatHeat));
-        rigthSeatHeat = newValue;
-        broadcast_temp(zone, newValue);
+        rightSeatHeat = newValue;
+        broadcast_value(zone, newValue);
     }
     else if (zone=="leftTemperature"){
         newValue = qBound (minTemp, newValue, maxTemp);
         leftTemperature = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
     }
     else if (zone=="rightTemperature"){
         newValue = qBound (minTemp, newValue, maxTemp);
         rightTemperature = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
     }
     else if (zone=="fanSpeed"){
         newValue = qBound (minFan, newValue, maxFan);
         fanSpeed = newValue;
-        broadcast_temp(zone, newValue);
+        broadcast_value(zone, newValue);
     }
     else if (zone=="fanDown"){
         fanDown = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="fanRight"){
         fanRight = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="fanUp"){
         fanUp = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="fanAC"){
         fanAC = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="fanAuto"){
         fanAuto = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="fanRecirc"){
         fanRecirc = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="defrostMax"){
         defrostMax = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="defrostRear"){
         defrostRear = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
     else if (zone=="defrostFront"){
         defrostFront = newMode;
-        broadcast_temp(zone, newMode);
+        broadcast_value(zone, newMode);
     }
 }
 
@@ -188,8 +191,8 @@ double dbushelper::get_value(QString zone){
     if (zone=="leftSeatHeat"){
         return leftSeatHeat;
     }
-    if (zone=="rigthSeatHeat"){
-        return rigthSeatHeat;
+    if (zone=="rightSeatHeat"){
+        return rightSeatHeat;
     }
     if (zone=="leftTemperature"){
         return leftTemperature;
@@ -243,7 +246,7 @@ void dbushelper::broadcast_temp(QString zone, double newTemp){
     QDBusMessage signal = QDBusMessage::createSignal(m_path, m_interface, m_member);
 
     QString msg;
-    int m_value = (int) round(newTemp);
+    int m_value = (int) round(newVal);
 
     std::string s = std::to_string(m_value);
     msg = "{\"function\":" + zone + ", \"value\":" + s.c_str() +"}";
@@ -266,6 +269,12 @@ void dbushelper::broadcast_temp(QString zone, double newTemp){
     }
 
 }
+
+QString dbushelper::return_status(){
+    QString s = "{\"leftSeatHeat\":" + QString::number(leftSeatHeat) + ", \"rightSeatHeat\":" + QString::number(rightSeatHeat) + ", \"leftTemperature\":" + QString::number((int) round(leftTemperature)) + ", \"rightTemperature\":" + QString::number((int) round(rightTemperature)) + ", \"fanSpeed\":" + QString::number((int) round(fanSpeed)) + ", \"fanDown\":" + QString::number(fanDown) + ", \"fanRight\":" + QString::number(fanRight) + ", \"fanUp\":" + QString::number(fanUp) + ", \"fanAC\":" + QString::number(fanAC) + ", \"fanAuto\":" + QString::number(fanAuto) + ", \"fanRecirc\":" + QString::number(fanRecirc) + ", \"defrostMax\":" + QString::number(defrostMax) + ", \"defrostRear\":" + QString::number(defrostRear) + ", \"defrostFront\":" + QString::number(defrostFront) +"}";
+    return  s;
+}
+
 
 
 
