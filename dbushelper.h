@@ -3,7 +3,7 @@
 #include <QQuickItem>
 
 #ifndef SERVICE_NAME
-#define SERVICE_NAME    "com.jaguarlandrover.hvac"
+#define SERVICE_NAME    "com.jlr.hvac"
 #endif // SERVICE_NAME
 
 using namespace std;

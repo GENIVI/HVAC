@@ -237,7 +237,7 @@ void dbushelper::debug_print(QString myString){
     qDebug()<< myString;
 }
 
-void dbushelper::broadcast_temp(QString zone, double newTemp){
+void dbushelper::broadcast_value(QString zone, double newVal){
     QString m_path = "/com/jlr/qmlsink";
     QString m_interface = "com.jlr.hvac";
     QString m_member = "hvac";
