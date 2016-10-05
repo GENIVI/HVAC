@@ -15,35 +15,44 @@ import Dbushelper 1.0
 App {
     appId: "hvac"
 
-    HazardButton {
-        id: hazardButton
-        y: 100
-        anchors.horizontalCenter: parent.horizontalCenter
-
-    }
-
     TempSlider {
         id: lTempSlider
-        x: 30
-        anchors.top: hazardButton.bottom
-        anchors.topMargin: 115
+        x: 100
+        anchors.top: parent.top
+        anchors.topMargin: 150
         side: "left"
+    }
+
+    TemperatureWheel {
+        id:ltwheel
+        anchors.left:lTempSlider.right
+        anchors.leftMargin: 20
+        anchors.verticalCenter: lTempSlider.verticalCenter
+        side: lTempSlider.side
     }
 
     TempSlider {
         id: rTempSlider
-        anchors.top: hazardButton.bottom
-        anchors.topMargin: 115
+        anchors.top: parent.top
+        anchors.topMargin: 150
         anchors.right: parent.right
-        anchors.rightMargin: 30
+        anchors.rightMargin: 100
         side: "right"
+    }
+
+    TemperatureWheel {
+        id:rtwheel
+        anchors.right:rTempSlider.left
+        anchors.rightMargin: 20
+        anchors.verticalCenter: rTempSlider.verticalCenter
+        side: rTempSlider.side
     }
 
     Row {
         id: m_row
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: hazardButton.bottom
-        anchors.topMargin: 90
+        anchors.top: parent.top
+        anchors.topMargin: 120
         spacing: 200
 
         MiddleColumn {id:leftColumn ; side: "left" }
@@ -52,15 +61,16 @@ App {
 
 
 
-    Image {
-        y: 1057
-        source: "images/separator.png"
-    }
+//    Image {
+//        id: separator
+//        anchors.top: m_row.bottom
+//        source: "images/separator.png"
+//    }
 
     FanControl {
-        x: 259
-        y: 1092
-
+        //x: 259
+        anchors.centerIn: parent
+        anchors.verticalCenterOffset: 25
     }
 
 
@@ -72,7 +82,7 @@ App {
         width: childrenRect.width
         height: childrenRect.height
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 40
+        anchors.bottomMargin: 140
 
         Row {
             id: m_row_panel

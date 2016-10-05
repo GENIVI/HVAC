@@ -12,6 +12,7 @@ Rectangle {
     height: 122
     color: "#aa000000"
     border.color: "#ff53b5ce"
+    border.width: 2
 
     property bool value: false
     property bool flash: false

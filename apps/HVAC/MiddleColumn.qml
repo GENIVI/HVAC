@@ -12,11 +12,12 @@ Item {
     id: root
 
     width: 239
-    height: 800
+    height: 200
 
     property string side: "left"
 
     Column {
+        anchors.fill: parent
         spacing: 50
 
         BoxHeading {
@@ -29,6 +30,5 @@ Item {
         }
 
         SeatHeatButton { side: root.side }
-        TemperatureWheel {id:twheel; side: root.side }
     }
 }

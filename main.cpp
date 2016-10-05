@@ -1,5 +1,7 @@
 #include <QGuiApplication>
+#undef QT_OPENGL_ES_3
 #include <QQuickView>
+#include <QQmlEngine>
 #include "dbushelper.h"
 
 #define HVAC_POC_SURFACE_ID 40
@@ -10,7 +12,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     qmlRegisterType<dbushelper>("Dbushelper", 1, 0, "Dbushelper");      //create QML object Mytime (first character has to be UPPERCASE!!) from C++ class
     QQuickView view;
-    view.setSource(QUrl(QStringLiteral("qrc:/Scaled.qml")));
+    view.engine()->addImportPath(QCoreApplication::applicationDirPath() + "/imports");
+    view.setSource(QUrl(QStringLiteral("qrc:/Main.qml")));
     view.setProperty("IVI-Surface-ID", HVAC_POC_SURFACE_ID);
     view.show();
     return app.exec();

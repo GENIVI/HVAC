@@ -11,11 +11,11 @@ import "apps/HVAC"
 import system 1.0
 
 Item {
-    width: 1080
-    height: 1920
+    width: 1920 - 80
+    height: 1080
 
     Image {
-        anchors.centerIn: parent
+        anchors.fill: parent
         source: "images/Hex-Background.jpg"
     }
 
