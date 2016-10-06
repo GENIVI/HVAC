@@ -1,0 +1,13 @@
+
+To build:
+sysroots/x86_64-oesdk-linux/usr/bin/qt5/qmake
+make
+
+Files to deploy:
+HVAC_rvi_vtc1010             -> /opt/com.genivi.gdp.hvac/bin/HVAC_rvi_vtc1010
+imports                      -> /opt/com.genivi.gdp.hvac/bin/imports
+com.genivi.gdp.hvac.svg      -> /opt/com.genivi.gdp.hvac/share/icons/com.genivi.gdp.hvac.svg
+com.genivi.gdp.hvac.app      -> /usr/share/applications/com.genivi.gdp.hvac.app
+com.genivi.gdp.hvac.service  -> /usr/lib/systemd/user/com.genivi.gdp.hvac.service
+
+Given this install the launcher will automatically find the appliciation.
